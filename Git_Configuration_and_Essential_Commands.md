@@ -173,19 +173,13 @@ git push origin main
 
 ## Most Used Commands
 
-  Command                     Purpose
-  --------------------------- -----------------------
-  `git --version`             Check Git version
-  `git config --list`         View configuration
-  `git status`                Check status
-  `git add .`                 Stage changes
-  `git commit -m "message"`   Commit
-  `git push origin main`      Push
-  `git pull origin main`      Pull
-  `git fetch`                 Fetch
-  `git branch`                List branches
-  `git switch`                Switch branch
-  `git log --oneline`         Commit history
-  `git diff`                  Show changes
-  `git stash`                 Save work temporarily
-  `git remote -v`             View remotes
+  | Purpose                                   | Command                          | What it Shows                                                         |
+  | ----------------------------------------- | -------------------------------- | --------------------------------------------------------------------- |
+  | Check global Git username                 | `git config --global user.name`  | Displays the global Git username used for commits.                    |
+  | Check global Git email                    | `git config --global user.email` | Displays the global Git email used for commits.                       |
+  | Check repository Git username             | `git config user.name`           | Displays the username configured for the current repository (if set). |
+  | Check repository Git email                | `git config user.email`          | Displays the email configured for the current repository (if set).    |
+  | Check authenticated GitHub account        | `gh auth status`                 | Shows the GitHub account currently authenticated via GitHub CLI.      |
+  | Check connected GitHub repository         | `git remote -v`                  | Displays the remote repository URLs for fetch and push operations.    |
+  | Check stored GitHub credentials (Windows) | `cmdkey /list`                   | Lists saved GitHub credentials stored in Windows Credential Manager.  |
+  | View all Git configuration                | `git config --list`              | Displays all active Git configuration settings.                       |
